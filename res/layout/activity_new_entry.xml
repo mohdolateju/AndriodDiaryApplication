@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewEntry" >
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/TimeValue"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Time"
+        android:layout_alignBottom="@+id/Time"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+
+
+
+    <TextView android:id="@+id/Description" android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignLeft="@+id/Duration" 
+        android:layout_centerVertical="true" 
+        android:text="@string/description" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <Button
+        android:id="@+id/DurationValue"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Duration"
+        android:layout_alignLeft="@+id/TimeValue"/>
+
+    <TextView
+        android:id="@+id/Duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Description"
+        android:layout_alignLeft="@+id/Time"
+        android:layout_marginBottom="55dp"
+        android:text="@string/duration"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/DateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TimeValue"
+        android:layout_alignBottom="@+id/TimeValue"
+        android:layout_toRightOf="@+id/TimeValue"
+        android:ems="6"
+        android:onClick="onClick"
+        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/DurationValue"
+            android:layout_alignLeft="@+id/Title"
+            android:layout_marginBottom="38dp"
+            android:text="@string/time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/TitleText"
+            android:layout_marginBottom="47dp"
+            android:onClick="onClick"
+            android:text="@string/submit" />
+
+        <EditText
+            android:id="@+id/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Title"
+            android:layout_alignBottom="@+id/Title"
+            android:layout_toRightOf="@+id/textView1"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/DescriptionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/Submit"
+            android:layout_alignTop="@+id/Description"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="40"
+            android:minLines="2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Description"
+            android:layout_below="@+id/DescriptionValue"
+            android:layout_marginTop="21dp"
+            android:text="@string/Reoccurrence"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/Occurences"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/DurationValue"
+            android:layout_alignRight="@+id/DateValue"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/EndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Submit"
+            android:layout_alignLeft="@+id/Occurences"
+            android:layout_marginBottom="13dp"
+            android:textColor="#FF0000"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

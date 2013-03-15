@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MohdDiary</string>
+    <string name="home">MohdDiary: Home</string>
+    <string name="newentry">MohdDiary: New Entry</string>
+    <string name="welcome">Welcome to Mohammed\'s Diary</string>
+    <string name="add_entry">Add New Entry</string>
+    <string name="view_all_entries">View All Entries</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_new_entry">New Entry</string>
+    <string name="title">Title</string>
+    <string name="time">Time</string>
+    <string name="duration">Duration</string>
+    <string name="description">Description</string>
+    <string name="min">min</string>
+    <string name="submit">Submit</string>
+    <string name="Reoccurrence">Occurrences</string>
+    <string name="EventList">List of Scheduled Events</string>
+    <string name="reset">Reset</string>
+    <string name="title_activity_update_entry">MohdDiary: UpdateEntry</string>
+    <string name="update_entry">Update Entry</string>
+    <string name="delete_entry">Delete Entry</string>
+   
+
+</resources>

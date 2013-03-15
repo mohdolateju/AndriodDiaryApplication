@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateEntry" >
+
+    <Button
+        android:id="@+id/TimeValue"
+        android:onClick="onClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Time"
+        android:layout_alignBottom="@+id/Time"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/DateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TimeValue"
+        android:layout_alignBottom="@+id/TimeValue"
+        android:layout_toRightOf="@+id/TimeValue"
+        android:ems="6"
+        android:onClick="onClick"
+        android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/DescriptionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TitleText"
+            android:layout_alignRight="@+id/UpdateEntry"
+            android:layout_alignTop="@+id/Description"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="40"
+            android:minLines="2" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Description"
+            android:layout_below="@+id/DescriptionValue"
+            android:layout_marginTop="21dp"
+            android:text="@string/Reoccurrence"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/Occurences"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignLeft="@+id/DurationValue"
+            android:layout_alignRight="@+id/DateValue"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/EndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/UpdateEntry"
+            android:layout_alignLeft="@+id/Occurences"
+            android:layout_marginBottom="13dp"
+            android:textColor="#FF0000"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Title"
+            android:layout_alignBottom="@+id/Title"
+            android:layout_alignLeft="@+id/TimeValue"
+            android:layout_alignRight="@+id/DateValue"
+            android:ems="10"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Title"
+            android:layout_below="@+id/TitleText"
+            android:layout_marginTop="22dp"
+            android:text="@string/time"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Duration"
+            android:layout_below="@+id/Duration"
+            android:layout_marginTop="28dp"
+            android:text="@string/description"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/Duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Time"
+            android:layout_below="@+id/TimeValue"
+            android:layout_marginTop="46dp"
+            android:text="@string/duration"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/UpdateEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignRight="@+id/Occurences"
+            android:layout_below="@+id/Occurences"
+            android:layout_marginTop="30dp"
+            android:background="#00FF00"
+            android:onClick="onClick"
+            android:text="@string/update_entry" />
+
+        <Button
+            android:id="@+id/DeleteEntry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/UpdateEntry"
+            android:layout_alignRight="@+id/UpdateEntry"
+            android:layout_below="@+id/UpdateEntry"
+            android:layout_marginTop="18dp"
+            android:background="#FF0000"
+            android:onClick="onClick"
+            android:text="@string/delete_entry" />
+
+        <Button
+            android:id="@+id/DurationValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Duration"
+            android:layout_alignBottom="@+id/Duration"
+            android:layout_alignLeft="@+id/TimeValue"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
